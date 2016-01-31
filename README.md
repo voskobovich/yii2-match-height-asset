@@ -47,11 +47,24 @@ class AppAsset extends AssetBundle
 and then execute JS code in view 
 ```
 <?php
-$js = <<<JS
-$('.item').matchHeight();
-JS;
-$this->registerJs($js)
+<div class="block-name">
+   content
+</div>
+
+$this->registerJs('$(".block-name").matchHeight();')
 ?>
+```  
+or  
+```
+<div data-mh="group-name-1">
+   content
+</div>
+
+<div data-mh="group-name-2">
+   content
+</div>
+
+<?php $this->registerJs('$("body").matchHeight();') ?>
 ```
 
 
