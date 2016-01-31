@@ -16,7 +16,8 @@ Support
 
 Plugin
 ---
-[DEMO](http://brm.io/jquery-match-height-demo/).  
+See [DEMO](http://brm.io/jquery-match-height-demo/).  
+
 Visit plugin [demo site](http://brm.io/jquery-match-height/) or [GitHub account](https://github.com/liabru/jquery-match-height).
 
 
