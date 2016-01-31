@@ -30,7 +30,6 @@ Register the asset in the code view
 ```
 <?php
 ...
-
 voskobovich\matchheight\MatchHeightAsset::register($this);
 ?>
 ```  
@@ -38,13 +37,7 @@ or in your AssetBundle
 ```
 class AppAsset extends AssetBundle
 {
-    public $sourcePath = '@web/path/to/assets';
-    public $css = [
-        ...
-    ];
-    public $js = [
-        ...
-    ];
+    ...
     public $depends = [
         ...
         'voskobovich\matchheight\MatchHeightAsset'
