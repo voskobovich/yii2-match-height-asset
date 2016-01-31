@@ -16,13 +16,54 @@ Support
 
 Plugin
 ---
-See [DEMO](http://brm.io/jquery-match-height-demo/).  
+[Demo](http://brm.io/jquery-match-height-demo/).  
 
-Visit plugin [demo site](http://brm.io/jquery-match-height/) or [GitHub account](https://github.com/liabru/jquery-match-height).
+[Documentation](https://github.com/liabru/jquery-match-height).  
+
+[Home page](http://brm.io/jquery-match-height/).
+
+
+Usage
+---
+
+Register the asset in the code view 
+```
+<?php
+...
+
+voskobovich\matchheight\MatchHeightAsset::register($this);
+?>
+```  
+or in your AssetBundle  
+```
+class AppAsset extends AssetBundle
+{
+    public $sourcePath = '@web/path/to/assets';
+    public $css = [
+        ...
+    ];
+    public $js = [
+        ...
+    ];
+    public $depends = [
+        ...
+        'voskobovich\matchheight\MatchHeightAsset'
+    ];
+}
+```  
+and then execute JS code in view 
+```
+<?php
+$js = <<<JS
+$('.item').matchHeight();
+JS;
+$this->registerJs($js)
+?>
+```
 
 
 Installation
-------------
+---
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
