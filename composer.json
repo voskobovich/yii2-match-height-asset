@@ -1,0 +1,35 @@
+{
+  "name": "voskobovich/yii2-match-height-asset",
+  "description": "A responsive equal heights jQuery plugin for Yii2",
+  "keywords": [
+    "matchheight",
+    "asset",
+    "frontend",
+    "js",
+    "yii2"
+  ],
+  "homepage": "https://github.com/voskobovich/yii2-match-height-asset",
+  "type": "yii2-asset",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/voskobovich/yii2-match-height-asset/issues",
+    "source": "https://github.com/voskobovich/yii2-match-height-asset"
+  },
+  "authors": [
+    {
+      "name": "Vitaly Voskobovich",
+      "email": "vitaly@voskobovich.com",
+      "homepage": "http://voskobovich.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.0",
+    "bower-asset/matchHeight": "~0.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "voskobovich\\matchheight\\": "src"
+    }
+  }
+}
